@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: "Shantell Sans", cursive;
+}
+#all-content {
+    height: 90vh;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#header-and-board-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+#header {
+    width: 60%;
+    text-align: center;
+    background-color: rgb(75, 74, 74);
+    border-radius: 30px;
+    padding: 10px;
+    color: #ddd;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 13px rgba(0,0,0, 0.3);
+}
+
+#grid-container {
+    width: 60%;
+    background-color: #f0db4f;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    border: 5px solid rgb(75, 74, 74);
+    border-radius: 10px;
+    box-shadow: 0px 5px 13px rgba(0,0,0, 0.9);
+    aspect-ratio: 1;
+    height: 90%;
+}
+.square {
+    border: #1b1b1b solid 1px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.square-content {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+.square:hover {
+    cursor: pointer;
+    background-color: #c0aa30 ;
+    transition: all 0.5s;
+}
+
+
+.action-btn {
+    cursor: pointer;
+    width: 100px;
+    background-color: rgb(84, 60, 172);
+    padding: 7px 10px;
+    margin-top: 5px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 0px 5px 13px rgba(0,0,0, 0.3);
+    transition: all 0.5s;
+    font-family: "Shantell Sans", cursive;
+}
+
+.action-btn:hover {
+    background-color: rgb(137, 105, 240);
+    box-shadow: 0px 5px 13px rgba(0,0,0, 0.7);
+}
+
+.finished {
+    pointer-events: none;
+}
